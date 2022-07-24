@@ -1,0 +1,86 @@
+.nav {
+  width: 100%;
+  height: 10vh;
+  background-color: "";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav > li {
+  list-style-type: none;
+  margin: 0px 10px;
+}
+
+.introPage {
+  width: 100%;
+  height: 90vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.introPage > section {
+  flex: 0 0 47%;
+  height: 95%;
+  background-color: "";
+  position: relative;
+}
+
+.introPage > section:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 40px;
+}
+
+.aboutUs {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: "";
+}
+
+.aboutUs > section {
+  flex: 0 0 45%;
+  height: 95%;
+  position: relative;
+  background-color: "";
+}
+
+.aboutUs > section:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 15px;
+}
+
+.aboutUs > section:nth-child(2) > button {
+  padding: 5px 25px;
+  margin: 10px 0px;
+}
+
+@media (max-width: 600px) {
+  .introPage {
+    flex-direction: column;
+  }
+
+  .introPage > section {
+    width: 98%;
+  }
+
+  .aboutUs {
+    flex-direction: column;
+    height: 90vh;
+  }
+
+  .aboutUs > section {
+    width: 98%;
+    flex: 0 0 50%;
+  }
+}
